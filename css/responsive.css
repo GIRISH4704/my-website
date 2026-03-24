@@ -211,3 +211,58 @@
     gap: 0.75rem;
   }
 }
+/* ===== MOBILE SERVICES PAGE ===== */
+
+@media (max-width: 900px) {
+  .page-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .page-hero-aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .hero-aside-stat {
+    min-width: 120px;
+  }
+
+  .service-row {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3rem 0;
+  }
+
+  .service-row-visual {
+    position: static;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+
+  .service-row-aside {
+    flex: 1;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 560px) {
+  .services-cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .services-cta .slide-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mini-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
