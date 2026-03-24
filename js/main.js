@@ -34,3 +34,21 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
     link.classList.add("active");
   }
 });
+// ===== SCROLL REVEAL =====
+const revealEls = document.querySelectorAll(
+  ".why-point, .stat-card, .service-card, .char-item, .testimonial-card",
+);
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("revealed");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 },
+);
+
+revealEls.forEach((el) => revealObserver.observe(el));

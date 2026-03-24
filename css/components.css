@@ -259,3 +259,129 @@
   background: #ffffff;
   border-color: #ffffff;
 }
+/* ===== SHARED SECTION UTILITIES ===== */
+
+.section-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-tag {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.85rem;
+}
+
+section h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+  margin-bottom: 1.25rem;
+}
+
+section h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.4rem;
+}
+
+section p {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+/* ===== WHY IT MATTERS ===== */
+
+#why-us {
+  padding: 7rem 0;
+  background: var(--color-bg);
+}
+
+#why-us .section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.why-lead {
+  font-size: 1.1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+}
+
+.why-points {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.why-point {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.why-icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  margin-top: 2px;
+}
+
+/* Stats column */
+.why-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  position: sticky;
+  top: calc(var(--nav-height) + 2rem);
+}
+
+.stat-card {
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.stat-number {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.stat-label {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
