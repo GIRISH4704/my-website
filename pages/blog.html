@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Insights, perspectives and practical thinking from our team — on strategy, growth, partnerships and business."
+    />
+    <title>Blog — YourCompany</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="navbar">
+        <a href="../index.html" class="nav-logo">YourLogo</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>
+            <a href="../index.html#contact" class="nav-cta">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero">
+      <div class="section-container page-hero-inner">
+        <div class="page-hero-text">
+          <p class="section-tag">Our thinking</p>
+          <h1>Insights and<br />perspectives</h1>
+          <p class="page-hero-lead">
+            Practical thinking on strategy, growth, partnerships and business —
+            written by the people doing the work.
+          </p>
+        </div>
+        <div class="page-hero-aside">
+          <div class="hero-aside-stat">
+            <span class="stat-number">48</span>
+            <span class="stat-label">Articles published</span>
+          </div>
+          <div class="hero-aside-stat">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Topics covered</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FILTER BAR ── -->
+    <div class="clients-filter-bar">
+      <div class="section-container">
+        <div class="filter-tabs" id="blog-filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="strategy">Strategy</button>
+          <button class="filter-tab" data-filter="growth">Growth</button>
+          <button class="filter-tab" data-filter="partnerships">
+            Partnerships
+          </button>
+          <button class="filter-tab" data-filter="leadership">
+            Leadership
+          </button>
+          <button class="filter-tab" data-filter="markets">Markets</button>
+          <button class="filter-tab" data-filter="tools">
+            Tools &amp; process
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── BLOG CONTENT ── -->
+    <div class="blog-page">
+      <div class="section-container blog-layout">
+        <!-- Posts grid -->
+        <main class="blog-main">
+          <!-- Featured post -->
+          <a
+            href="blog-post.html?post=why-strategy-fails"
+            class="blog-post-featured"
+            data-category="strategy"
+          >
+            <div class="bpf-image-wrap">
+              <div class="bpf-image" style="background: #1a1a2e">
+                <span class="bpf-image-label">Strategy</span>
+              </div>
+            </div>
+            <div class="bpf-content">
+              <div class="post-meta">
+                <span class="post-tag">Strategy</span>
+                <span class="post-date">12 March 2025</span>
+                <span class="post-read">8 min read</span>
+              </div>
+              <h2>Why most business strategies fail before they even start</h2>
+              <p class="post-excerpt">
+                The problem is rarely the strategy itself. It is the gap between
+                the document and the daily decisions. Here is what actually
+                separates businesses that execute from those that plan.
+              </p>
+              <div class="post-author">
+                <div class="post-author-avatar">JO</div>
+                <div>
+                  <span class="post-author-name">James Okafor</span>
+                  <span class="post-author-role">Managing Partner</span>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Post grid -->
+          <div class="blog-posts-grid" id="blog-posts-grid">
+            <a
+              href="blog-post.html?post=building-partnerships"
+              class="blog-post-card"
+              data-category="partnerships"
+            >
+              <div class="bpc-image" style="background: #16213e">
+                <span class="bpc-tag">Partnerships</span>
+              </div>
+              <div class="bpc-content">
+                <div class="post-meta">
+                  <span class="post-date">4 March 2025</span>
+                  <span class="post-read">6 min read</span>
+                </div>
+                <h3>How to build partnerships that actually last</h3>
+                <p class="post-excerpt">
+                  Most partnerships collapse not because of bad intentions but
+                  because of misaligned expectations. Here is how to structure
+                  them properly from day one.
+                </p>
+                <div class="post-author">
+                  <div class="post-author-avatar sm">SR</div>
+                  <span class="post-author-name">Sarah Rahman</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="blog-post.html?post=growth-stalls"
+              class="blog-post-card"
+              data-category="growth"
+            >
+              <div class="bpc-image" style="background: #0f3460">
+                <span class="bpc-tag">Growth</span>
+              </div>
+              <div class="bpc-content">
+                <div class="post-meta">
+                  <span class="post-date">24 February 2025</span>
+                  <span class="post-read">5 min read</span>
+                </div>
+                <h3>The three reasons growth stalls at the mid-market stage</h3>
+                <p class="post-excerpt">
+                  The tactics that got you to £5m rarely get you to £20m.
+                  Understanding why is the first step to breaking through the
+                  ceiling.
+                </p>
+                <div class="post-author">
+                  <div class="post-author-avatar sm">AM</div>
+                  <span class="post-author-name">Amara Mensah</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="blog-post.html?post=leadership-decisions"
+              class="blog-post-card"
+              data-category="leadership"
+            >
+              <div class="bpc-image" style="background: #533483">
+                <span class="bpc-tag">Leadership</span>
+              </div>
+              <div class="bpc-content">
+                <div class="post-meta">
+                  <span class="post-date">14 February 2025</span>
+                  <span class="post-read">7 min read</span>
+                </div>
+                <h3>
+                  Making better decisions under pressure: a practical framework
+                </h3>
+                <p class="post-excerpt">
+                  Speed and quality are not opposites in decision-making — if
+                  you have the right structure. Here is the one we use with
+                  leadership teams.
+                </p>
+                <div class="post-author">
+                  <div class="post-author-avatar sm">DK</div>
+                  <span class="post-author-name">David Kim</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="blog-post.html?post=market-entry"
+              class="blog-post-card"
+              data-category="markets"
+            >
+              <div class="bpc-image" style="background: #1a472a">
+                <span class="bpc-tag">Markets</span>
+              </div>
+              <div class="bpc-content">
+                <div class="post-meta">
+                  <span class="post-date">3 February 2025</span>
+                  <span class="post-read">9 min read</span>
+                </div>
+                <h3>What nobody tells you about entering a new market</h3>
+                <p class="post-excerpt">
+                  The research looks good. The numbers stack up. And then you
+                  launch and nothing works as expected. Here is what the models
+                  miss.
+                </p>
+                <div class="post-author">
+                  <div class="post-author-avatar sm">LP</div>
+                  <span class="post-author-name">Lena Petrov</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="blog-post.html?post=tools-we-use"
+              class="blog-post-card"
+              data-category="tools"
+            >
+              <div class="bpc-image" style="background: #2d1b69">
+                <span class="bpc-tag">Tools &amp; process</span>
+              </div>
+              <div class="bpc-content">
+                <div class="post-meta">
+                  <span class="post-date">22 January 2025</span>
+                  <span class="post-read">4 min read</span>
+                </div>
+                <h3>The tools our team actually uses every day</h3>
+                <p class="post-excerpt">
+                  Not a sponsored list. Just an honest breakdown of what we have
+                  found genuinely useful after years of working with complex,
+                  fast-moving clients.
+                </p>
+                <div class="post-author">
+                  <div class="post-author-avatar sm">JO</div>
+                  <span class="post-author-name">James Okafor</span>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="blog-post.html?post=consulting-myths"
+              class="blog-post-card"
+              data-category="strategy"
+            >
+              <div class="bpc-image" style="background: #3d1a00">
+                <span class="bpc-tag">Strategy</span>
+              </div>
+              <div class="bpc-content">
+                <div class="post-meta">
+                  <span class="post-date">9 January 2025</span>
+                  <span class="post-read">6 min read</span>
+                </div>
+                <h3>Five consulting myths that cost businesses real money</h3>
+                <p class="post-excerpt">
+                  From "we need a full audit first" to "let's run a pilot" —
+                  here are the beliefs that keep businesses stuck and the
+                  reality behind each one.
+                </p>
+                <div class="post-author">
+                  <div class="post-author-avatar sm">SR</div>
+                  <span class="post-author-name">Sarah Rahman</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- No results message -->
+          <div
+            class="blog-no-results"
+            id="blog-no-results"
+            style="display: none"
+          >
+            <p>No posts in this category yet — check back soon.</p>
+          </div>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="blog-sidebar">
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Topics</h4>
+            <ul class="widget-topics">
+              <li>
+                <button class="topic-btn" data-filter="all">All posts</button>
+              </li>
+              <li>
+                <button class="topic-btn" data-filter="strategy">
+                  Strategy
+                </button>
+              </li>
+              <li>
+                <button class="topic-btn" data-filter="growth">Growth</button>
+              </li>
+              <li>
+                <button class="topic-btn" data-filter="partnerships">
+                  Partnerships
+                </button>
+              </li>
+              <li>
+                <button class="topic-btn" data-filter="leadership">
+                  Leadership
+                </button>
+              </li>
+              <li>
+                <button class="topic-btn" data-filter="markets">Markets</button>
+              </li>
+              <li>
+                <button class="topic-btn" data-filter="tools">
+                  Tools &amp; process
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Newsletter</h4>
+            <p class="widget-text">
+              One email per month. Practical thinking, no filler.
+            </p>
+            <form class="widget-form" id="newsletter-form">
+              <input
+                type="email"
+                placeholder="your@email.com"
+                id="nl-email"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+            <p class="widget-status" id="nl-status"></p>
+          </div>
+
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Work with us</h4>
+            <p class="widget-text">
+              If something you read sparked an idea, let's talk about it.
+            </p>
+            <a
+              href="../index.html#contact"
+              class="slide-btn"
+              style="display: block; text-align: center; margin-top: 1rem"
+            >
+              Get in touch
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- ── MINI FOOTER ── -->
+    <footer class="mini-footer">
+      <div class="section-container mini-footer-inner">
+        <a
+          href="../index.html"
+          class="nav-logo"
+          style="color: rgba(255, 255, 255, 0.7)"
+          >YourLogo</a
+        >
+        <p class="footer-copy">
+          &copy; <span class="mini-year"></span> YourCompany. All rights
+          reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/blog.js"></script>
+    <script>
+      document.querySelectorAll(".mini-year").forEach((el) => {
+        el.textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>

@@ -284,3 +284,37 @@
     font-size: 0.82rem;
   }
 }
+/* ===== MOBILE BLOG ===== */
+
+@media (max-width: 1024px) {
+  .blog-layout,
+  .post-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-sidebar {
+    position: static;
+  }
+
+  .blog-post-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .bpf-image-wrap {
+    min-height: 200px;
+  }
+
+  .bpf-image {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .blog-posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .post-cover {
+    height: 200px;
+  }
+}
