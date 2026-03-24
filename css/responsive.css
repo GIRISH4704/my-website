@@ -68,3 +68,30 @@
     right: 0.75rem;
   }
 }
+/* ===== MOBILE WHY IT MATTERS ===== */
+
+@media (max-width: 768px) {
+  #why-us {
+    padding: 4rem 0;
+  }
+
+  #why-us .section-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .why-stats {
+    position: static;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-stats {
+    grid-template-columns: 1fr;
+  }
+}
