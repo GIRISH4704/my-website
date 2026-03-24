@@ -1232,3 +1232,218 @@ section p {
   gap: 1rem;
   flex-wrap: wrap;
 }
+/* ===== CLIENTS PAGE ===== */
+
+.clients-filter-bar {
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-border);
+  padding: 0;
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 100;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.filter-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-tab {
+  padding: 1rem 1.5rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.filter-tab:hover {
+  color: var(--color-primary);
+}
+
+.filter-tab.active {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.clients-page {
+  padding: 5rem 0 6rem;
+  background: var(--color-bg);
+}
+
+.clients-category {
+  margin-bottom: 5rem;
+  transition: opacity 0.3s ease;
+}
+
+.clients-category.hidden {
+  display: none;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.category-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.category-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+/* Client card */
+.client-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: calc(var(--radius) * 1.5);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.client-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+}
+
+.client-card-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.client-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.client-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin: 0 0 3px;
+}
+
+.client-type {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.client-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  flex: 1;
+}
+
+.client-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.client-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 50px;
+  border: 1px solid var(--color-border);
+  transition:
+    background var(--transition),
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.client-link.website {
+  color: var(--color-text-muted);
+}
+
+.client-link.website:hover {
+  background: var(--color-bg-soft);
+  border-color: var(--color-text-muted);
+  color: var(--color-primary);
+}
+
+.client-link.linkedin {
+  color: #0077b5;
+  border-color: #0077b520;
+  background: #0077b508;
+}
+
+.client-link.linkedin:hover {
+  background: #0077b515;
+  border-color: #0077b5;
+}
+
+.client-link.twitter {
+  color: #000000;
+  border-color: #00000015;
+  background: #00000005;
+}
+
+.client-link.twitter:hover {
+  background: #00000010;
+  border-color: #000000;
+}
+
+.client-link.instagram {
+  color: #e1306c;
+  border-color: #e1306c20;
+  background: #e1306c08;
+}
+
+.client-link.instagram:hover {
+  background: #e1306c15;
+  border-color: #e1306c;
+}

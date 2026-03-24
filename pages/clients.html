@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The companies and clients we work with — organised by sector, with links to their websites and social profiles."
+    />
+    <title>Clients &amp; Partners — YourCompany</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="navbar">
+        <a href="../index.html" class="nav-logo">YourLogo</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>
+            <a href="../index.html#contact" class="nav-cta">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ── PAGE HERO ── -->
+    <section class="page-hero">
+      <div class="section-container page-hero-inner">
+        <div class="page-hero-text">
+          <p class="section-tag">Our network</p>
+          <h1>The companies<br />that trust us</h1>
+          <p class="page-hero-lead">
+            We are proud to work alongside exceptional businesses across
+            multiple sectors. Every relationship here is built on trust,
+            results, and a shared commitment to doing things properly.
+          </p>
+        </div>
+        <div class="page-hero-aside">
+          <div class="hero-aside-stat">
+            <span class="stat-number">150+</span>
+            <span class="stat-label">Active clients</span>
+          </div>
+          <div class="hero-aside-stat">
+            <span class="stat-number">12</span>
+            <span class="stat-label">Industries</span>
+          </div>
+          <div class="hero-aside-stat">
+            <span class="stat-number">18</span>
+            <span class="stat-label">Countries</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FILTER BAR ── -->
+    <div class="clients-filter-bar">
+      <div class="section-container">
+        <div class="filter-tabs" id="filter-tabs">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="technology">
+            Technology
+          </button>
+          <button class="filter-tab" data-filter="finance">Finance</button>
+          <button class="filter-tab" data-filter="healthcare">
+            Healthcare
+          </button>
+          <button class="filter-tab" data-filter="retail">Retail</button>
+          <button class="filter-tab" data-filter="education">Education</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── CLIENTS SECTIONS ── -->
+    <div class="clients-page">
+      <div class="section-container">
+        <!-- CATEGORY: Technology -->
+        <div class="clients-category" data-category="technology">
+          <div class="category-header">
+            <h2 class="category-title">Technology</h2>
+            <span class="category-count" id="count-technology"></span>
+          </div>
+          <div class="clients-grid" id="grid-technology">
+            <div class="client-card">
+              <div class="client-card-top">
+                <div class="client-avatar">NX</div>
+                <div class="client-info">
+                  <h3 class="client-name">Nexora Systems</h3>
+                  <span class="client-type">Enterprise Software</span>
+                </div>
+              </div>
+              <p class="client-desc">
+                A leading provider of enterprise workflow automation tools used
+                by Fortune 500 companies across 30 countries.
+              </p>
+              <div class="client-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link website"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                  Website
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link linkedin"
+                  >in LinkedIn</a
+                >
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link twitter"
+                  >X Twitter</a
+                >
+              </div>
+            </div>
+
+            <div class="client-card">
+              <div class="client-card-top">
+                <div class="client-avatar">VC</div>
+                <div class="client-info">
+                  <h3 class="client-name">Vercade Labs</h3>
+                  <span class="client-type">AI &amp; Machine Learning</span>
+                </div>
+              </div>
+              <p class="client-desc">
+                Building the next generation of AI tools for financial services.
+                Backed by Tier 1 VCs and operating across Europe and North
+                America.
+              </p>
+              <div class="client-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link website"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                  Website
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link linkedin"
+                  >in LinkedIn</a
+                >
+              </div>
+            </div>
+
+            <div class="client-card">
+              <div class="client-card-top">
+                <div class="client-avatar">PL</div>
+                <div class="client-info">
+                  <h3 class="client-name">Pylonix</h3>
+                  <span class="client-type">Cloud Infrastructure</span>
+                </div>
+              </div>
+              <p class="client-desc">
+                Managed cloud infrastructure for mid-market businesses. Known
+                for reliability, transparent pricing, and exceptional support.
+              </p>
+              <div class="client-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link website"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                  Website
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link linkedin"
+                  >in LinkedIn</a
+                >
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link twitter"
+                  >X Twitter</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY: Finance -->
+        <div class="clients-category" data-category="finance">
+          <div class="category-header">
+            <h2 class="category-title">Finance</h2>
+            <span class="category-count" id="count-finance"></span>
+          </div>
+          <div class="clients-grid" id="grid-finance">
+            <div class="client-card">
+              <div class="client-card-top">
+                <div class="client-avatar">MV</div>
+                <div class="client-info">
+                  <h3 class="client-name">Meridian Ventures</h3>
+                  <span class="client-type">Private Equity</span>
+                </div>
+              </div>
+              <p class="client-desc">
+                A private equity firm focused on growth-stage businesses in
+                emerging markets. Portfolio spans 14 countries across three
+                continents.
+              </p>
+              <div class="client-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link website"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                  Website
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link linkedin"
+                  >in LinkedIn</a
+                >
+              </div>
+            </div>
+
+            <div class="client-card">
+              <div class="client-card-top">
+                <div class="client-avatar">CF</div>
+                <div class="client-info">
+                  <h3 class="client-name">Clearfield Capital</h3>
+                  <span class="client-type">Asset Management</span>
+                </div>
+              </div>
+              <p class="client-desc">
+                Independent asset manager with a focus on sustainable
+                infrastructure investments. AUM exceeding $2 billion across four
+                funds.
+              </p>
+              <div class="client-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link website"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                  Website
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link linkedin"
+                  >in LinkedIn</a
+                >
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link twitter"
+                  >X Twitter</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY: Healthcare -->
+        <div class="clients-category" data-category="healthcare">
+          <div class="category-header">
+            <h2 class="category-title">Healthcare</h2>
+            <span class="category-count" id="count-healthcare"></span>
+          </div>
+          <div class="clients-grid" id="grid-healthcare">
+            <div class="client-card">
+              <div class="client-card-top">
+                <div class="client-avatar">HB</div>
+                <div class="client-info">
+                  <h3 class="client-name">Heliox Biotech</h3>
+                  <span class="client-type">Biotechnology</span>
+                </div>
+              </div>
+              <p class="client-desc">
+                Developing novel diagnostic tools for early-stage cancer
+                detection. Currently in Phase 2 trials across five clinical
+                sites in Europe.
+              </p>
+              <div class="client-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link website"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                  Website
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link linkedin"
+                  >in LinkedIn</a
+                >
+              </div>
+            </div>
+
+            <div class="client-card">
+              <div class="client-card-top">
+                <div class="client-avatar">WC</div>
+                <div class="client-info">
+                  <h3 class="client-name">Wellcore Group</h3>
+                  <span class="client-type">Healthcare Services</span>
+                </div>
+              </div>
+              <p class="client-desc">
+                Operating a network of integrated health clinics across
+                Southeast Asia. Focused on making quality primary care
+                accessible and affordable.
+              </p>
+              <div class="client-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link website"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                  Website
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link linkedin"
+                  >in LinkedIn</a
+                >
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link twitter"
+                  >X Twitter</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY: Retail -->
+        <div class="clients-category" data-category="retail">
+          <div class="category-header">
+            <h2 class="category-title">Retail</h2>
+            <span class="category-count" id="count-retail"></span>
+          </div>
+          <div class="clients-grid" id="grid-retail">
+            <div class="client-card">
+              <div class="client-card-top">
+                <div class="client-avatar">AK</div>
+                <div class="client-info">
+                  <h3 class="client-name">Arkade Brands</h3>
+                  <span class="client-type">Consumer Goods</span>
+                </div>
+              </div>
+              <p class="client-desc">
+                A multi-brand consumer goods company operating across fashion,
+                home, and beauty. Distributed in over 40 markets globally.
+              </p>
+              <div class="client-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link website"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                  Website
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link linkedin"
+                  >in LinkedIn</a
+                >
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link instagram"
+                  >ig Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CATEGORY: Education -->
+        <div class="clients-category" data-category="education">
+          <div class="category-header">
+            <h2 class="category-title">Education</h2>
+            <span class="category-count" id="count-education"></span>
+          </div>
+          <div class="clients-grid" id="grid-education">
+            <div class="client-card">
+              <div class="client-card-top">
+                <div class="client-avatar">EP</div>
+                <div class="client-info">
+                  <h3 class="client-name">Edupeak</h3>
+                  <span class="client-type">EdTech</span>
+                </div>
+              </div>
+              <p class="client-desc">
+                Online learning platform serving 500,000 students across Africa
+                and the Middle East. Specialising in professional skills and
+                vocational training.
+              </p>
+              <div class="client-links">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link website"
+                >
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <line x1="2" y1="12" x2="22" y2="12" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                  Website
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link linkedin"
+                  >in LinkedIn</a
+                >
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="client-link twitter"
+                  >X Twitter</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── BOTTOM CTA ── -->
+    <section class="services-cta">
+      <div class="section-container services-cta-inner">
+        <div>
+          <h2>Want to join this network?</h2>
+          <p>
+            We work with a selective group of businesses we genuinely believe
+            in. If that sounds like you, let's talk.
+          </p>
+        </div>
+        <a href="../index.html#contact" class="slide-btn">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ── MINI FOOTER ── -->
+    <footer class="mini-footer">
+      <div class="section-container mini-footer-inner">
+        <a
+          href="../index.html"
+          class="nav-logo"
+          style="color: rgba(255, 255, 255, 0.7)"
+          >YourLogo</a
+        >
+        <p class="footer-copy">
+          &copy; <span class="mini-year"></span> YourCompany. All rights
+          reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/clients.js"></script>
+    <script>
+      document.querySelectorAll(".mini-year").forEach((el) => {
+        el.textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>
