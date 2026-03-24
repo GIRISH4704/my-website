@@ -128,3 +128,31 @@
     position: static;
   }
 }
+/* ===== MOBILE CHARACTERISTICS ===== */
+
+@media (max-width: 1024px) {
+  .char-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  #characteristics {
+    padding: 4rem 0;
+  }
+
+  .char-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .char-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+
+  .char-banner .slide-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
