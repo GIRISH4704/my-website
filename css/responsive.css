@@ -156,3 +156,19 @@
     text-align: center;
   }
 }
+/* ===== MOBILE TESTIMONIALS ===== */
+
+@media (max-width: 768px) {
+  #testimonials {
+    padding: 4rem 0;
+  }
+
+  .testimonial-card {
+    padding: 2rem 1.5rem;
+    margin: 0 0.25rem;
+  }
+
+  .t-body {
+    font-size: 0.97rem;
+  }
+}
