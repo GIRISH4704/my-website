@@ -40,3 +40,31 @@
     border-radius: var(--radius) !important;
   }
 }
+/* ===== MOBILE SLIDESHOW ===== */
+
+@media (max-width: 768px) {
+  #hero {
+    height: 88vh;
+  }
+
+  .slide-content h1 {
+    font-size: 2rem;
+  }
+
+  .slide-desc {
+    font-size: 0.95rem;
+  }
+
+  .slide-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .slide-arrow.prev {
+    left: 0.75rem;
+  }
+  .slide-arrow.next {
+    right: 0.75rem;
+  }
+}
