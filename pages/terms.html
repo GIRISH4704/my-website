@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Use</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="navbar">
+        <a href="../index.html" class="nav-logo">YourLogo</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>
+            <a href="../index.html#contact" class="nav-cta">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="detail-page">
+      <div class="section-container">
+        <a href="../index.html" class="back-link">&larr; Back to home</a>
+        <div class="detail-hero">
+          <p class="section-tag">Legal</p>
+          <h1>Terms of Use</h1>
+          <p class="detail-lead">
+            Last updated: <span id="privacy-year"></span>
+          </p>
+        </div>
+        <div class="detail-main">
+          <p>
+            Your terms of use content goes here. Replace this with your actual
+            terms.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="../js/main.js"></script>
+    <script>
+      const y = document.getElementById("privacy-year");
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

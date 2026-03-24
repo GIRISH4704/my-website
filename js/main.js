@@ -52,3 +52,53 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealEls.forEach((el) => revealObserver.observe(el));
+// ===== FOOTER: auto year =====
+const yearEl = document.getElementById("footer-year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// ===== CONTACT FORM: validation + submit =====
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("cf-name").value.trim();
+    const email = document.getElementById("cf-email").value.trim();
+    const subject = document.getElementById("cf-subject").value.trim();
+    const message = document.getElementById("cf-message").value.trim();
+
+    // Basic validation
+    if (!name || !email || !subject || !message) {
+      formStatus.textContent = "Please fill in all fields.";
+      formStatus.className = "form-status error";
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      formStatus.textContent = "Please enter a valid email address.";
+      formStatus.className = "form-status error";
+      return;
+    }
+
+    // Disable button while "sending"
+    const submitBtn = contactForm.querySelector(".form-submit");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+    formStatus.textContent = "";
+    formStatus.className = "form-status";
+
+    // ── Replace this block with your real form service later ──
+    setTimeout(() => {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send message";
+      formStatus.textContent =
+        "Message sent! We will be in touch within one business day.";
+      formStatus.className = "form-status success";
+      contactForm.reset();
+    }, 1200);
+    // ── End placeholder block ──────────────────────────────────
+  });
+}
