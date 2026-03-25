@@ -318,3 +318,34 @@
     height: 200px;
   }
 }
+/* ===== MOBILE ABOUT PAGE ===== */
+
+@media (max-width: 1024px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .about-story-inner {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-story,
+  .about-mission,
+  .about-team {
+    padding: 4rem 0;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
