@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message sent — YourCompany</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav class="navbar">
+        <a href="../index.html" class="nav-logo">YourLogo</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="clients.html">Clients</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li>
+            <a href="../index.html#contact" class="nav-cta">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="detail-page">
+      <div class="section-container">
+        <div class="thankyou-block">
+          <div class="thankyou-icon">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+          </div>
+          <h1>Message received</h1>
+          <p>
+            Thank you for reaching out. We will come back to you within one
+            business day.
+          </p>
+          <a
+            href="../index.html"
+            class="slide-btn"
+            style="margin-top: 1.5rem; display: inline-block"
+          >
+            Back to home
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mini-footer">
+      <div class="section-container mini-footer-inner">
+        <a
+          href="../index.html"
+          class="nav-logo"
+          style="color: rgba(255, 255, 255, 0.7)"
+          >YourLogo</a
+        >
+        <p class="footer-copy">
+          &copy; <span class="mini-year"></span> YourCompany. All rights
+          reserved.
+        </p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      document.querySelectorAll(".mini-year").forEach((el) => {
+        el.textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>
