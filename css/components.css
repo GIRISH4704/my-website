@@ -28,7 +28,7 @@
 }
 
 .nav-logo {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--color-primary);
   letter-spacing: -0.02em;
@@ -2128,4 +2128,39 @@ section p {
   color: rgba(255, 255, 255, 0.58);
   line-height: 1.65;
   margin: 0;
+}
+/* ===== THANK YOU PAGE ===== */
+
+.thankyou-block {
+  max-width: 480px;
+  margin: 4rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.thankyou-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: color-mix(in srgb, #16a34a 12%, transparent);
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.thankyou-block h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.thankyou-block p {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
 }

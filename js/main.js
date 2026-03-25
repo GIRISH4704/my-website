@@ -91,14 +91,35 @@ if (contactForm) {
     formStatus.className = "form-status";
 
     // ── Replace this block with your real form service later ──
-    setTimeout(() => {
-      submitBtn.disabled = false;
-      submitBtn.textContent = "Send message";
-      formStatus.textContent =
-        "Message sent! We will be in touch within one business day.";
-      formStatus.className = "form-status success";
-      contactForm.reset();
-    }, 1200);
+    // ── Formspree submission ───────────────────────────────────
+    fetch("https://formspree.io/f/maqlwpbj", {
+      method: "POST",
+      headers: { Accept: "application/json" },
+      body: new FormData(contactForm),
+    })
+      .then((response) => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send message";
+
+        if (response.ok) {
+          formStatus.textContent =
+            "Message sent! We will be in touch within one business day.";
+          formStatus.className = "form-status success";
+          contactForm.reset();
+        } else {
+          formStatus.textContent =
+            "Something went wrong. Please email us directly.";
+          formStatus.className = "form-status error";
+        }
+      })
+      .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send message";
+        formStatus.textContent =
+          "Could not send — please check your connection and try again.";
+        formStatus.className = "form-status error";
+      });
+    // ── End Formspree block ────────────────────────────────────
     // ── End placeholder block ──────────────────────────────────
   });
 }
