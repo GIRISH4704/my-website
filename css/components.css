@@ -103,7 +103,6 @@
 /* ===== HERO SLIDESHOW ===== */
 
 #hero {
-  margin-top: var(--nav-height);
   width: 100%;
   height: calc(100vh - var(--nav-height));
   position: relative;
@@ -2163,4 +2162,104 @@ section p {
   font-size: 1.05rem;
   color: var(--color-text-muted);
   line-height: 1.7;
+}
+/* ============================================
+   INTRO SECTION
+   ============================================ */
+#intro {
+  background-color: #1a1a2e;
+  padding: 100px 20px;
+  margin-top: var(--nav-height);
+}
+
+.intro-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.intro-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intro-tag {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.intro-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.intro-description {
+  font-size: 1.1rem;
+  color: #a0aec0;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.intro-btn {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  width: fit-content;
+  transition: var(--transition);
+}
+
+.intro-btn:hover {
+  background-color: #c73652;
+  transform: translateY(-2px);
+}
+
+.intro-image {
+  flex: 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-height: 480px;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: var(--radius);
+}
+
+/* Responsive — stack on mobile */
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .intro-heading {
+    font-size: 2rem;
+  }
+
+  .intro-image {
+    width: 100%;
+  }
 }
