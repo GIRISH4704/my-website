@@ -65,83 +65,390 @@
       </div>
     </section>
 
-    <!-- ========== HERO SLIDESHOW ========== -->
+    <!-- FLASHCARD CAROUSEL SECTION -->
     <section id="hero">
-      <div class="slideshow">
-        <!-- Slide 1 → Clients & Partners page -->
-        <div class="slide active" style="background: #1a1a2e">
-          <div class="slide-overlay"></div>
-          <div class="slide-content">
-            <p class="slide-tag">Our Network</p>
-            <h1>The companies <br />that trust us</h1>
-            <p class="slide-desc">
-              Meet the clients and partners we work with every day.
-            </p>
-            <a href="pages/clients.html" class="slide-btn">Meet Our Partners</a>
+      <!-- TOP: Sliding flashcards -->
+      <div class="fc-top">
+        <div class="fc-viewport">
+          <div class="fc-track">
+            <div class="fc-card" data-index="0">
+              <div class="fc-card-top">
+                <img
+                  class="fc-logo"
+                  src="assets/ATLAS HOSPITALS.png"
+                  alt="ATLAS HOSPITALS"
+                  style="width: 300px; height: 50px; object-fit: contain"
+                />
+                <div class="fc-card-name">ATLAS HOSPITALS</div>
+              </div>
+              <p class="fc-review">
+                "Working with this team transformed how we approach patient
+                outreach. Focused, clear, and effective."
+              </p>
+              <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+
+            <div class="fc-card" data-index="1">
+              <div class="fc-card-top">
+                <img
+                  class="fc-logo"
+                  src="assets/DR ANILKUMAR EYE HOSPITAL.jpg"
+                  alt="DR ANILKUMAR EYE HOSPITAL"
+                />
+                <div class="fc-card-name">DR ANILKUMAR EYE HOSPITAL</div>
+              </div>
+              <p class="fc-review">
+                "An outstanding partner. They understood our challenges from day
+                one and delivered a plan we trust."
+              </p>
+              <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+
+            <div class="fc-card" data-index="2">
+              <div class="fc-card-top">
+                <img
+                  class="fc-logo"
+                  src="assets/MUKESH ARTHRO CARE HOSPITAL.png"
+                  alt="MUKESH ARTHRO CARE HOSPITAL"
+                />
+                <div class="fc-card-name">MUKESH ARTHRO CARE HOSPITAL</div>
+              </div>
+              <p class="fc-review">
+                "Exceptional insight. Our partnership has been one of the best
+                decisions we have made as an organisation."
+              </p>
+              <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+
+            <div class="fc-card" data-index="3">
+              <div class="fc-card-top">
+                <img
+                  class="fc-logo"
+                  src="assets/SRI RAMAKRISHNA SPECIALTY HOSPITALS.jpg"
+                  alt="SRI RAMAKRISHNA SPECIALTY HOSPITALS"
+                />
+                <div class="fc-card-name">
+                  SRI RAMAKRISHNA SPECIALTY HOSPITALS
+                </div>
+              </div>
+              <p class="fc-review">
+                "They brought structure and clarity to our operations. The
+                impact on our staff has been lasting."
+              </p>
+              <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
+
+            <div class="fc-card" data-index="4">
+              <div class="fc-card-top">
+                <img
+                  class="fc-logo"
+                  src="https://placehold.co/48x48/ffffff/1a1a2e?text=H5"
+                  alt="Elmwood Healthcare Group"
+                />
+                <div class="fc-card-name">Elmwood Healthcare Group</div>
+              </div>
+              <p class="fc-review">
+                "From research to implementation, every step was handled with
+                care. Could not ask for a better partner."
+              </p>
+              <div class="fc-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            </div>
           </div>
         </div>
 
-        <!-- Slide 2 → Services page -->
-        <div class="slide" style="background: #16213e">
-          <div class="slide-overlay"></div>
-          <div class="slide-content">
-            <p class="slide-tag">What We Do</p>
-            <h1>Services built <br />for real results</h1>
-            <p class="slide-desc">
-              Explore the full range of services we offer.
-            </p>
-            <a href="pages/services.html" class="slide-btn">See Our Services</a>
-          </div>
-        </div>
-
-        <!-- Slide 3 → your choice (placeholder) -->
-        <div class="slide" style="background: #0f3460">
-          <div class="slide-overlay"></div>
-          <div class="slide-content">
-            <p class="slide-tag">Our Story</p>
-            <h1>Built on trust, <br />driven by purpose</h1>
-            <p class="slide-desc">Learn who we are and what we stand for.</p>
-            <a href="pages/about.html" class="slide-btn">About Us</a>
-          </div>
-        </div>
-
-        <!-- Slide 4 → your choice (placeholder) -->
-        <div class="slide" style="background: #533483">
-          <div class="slide-overlay"></div>
-          <div class="slide-content">
-            <p class="slide-tag">Get In Touch</p>
-            <h1>Let's build <br />something together</h1>
-            <p class="slide-desc">We'd love to hear about your project.</p>
-            <a href="#contact" class="slide-btn">Contact Us</a>
-          </div>
-        </div>
-
-        <!-- Controls -->
-        <button
-          class="slide-arrow prev"
-          id="slide-prev"
-          aria-label="Previous slide"
-        >
+        <!-- Arrows -->
+        <button class="fc-arrow fc-arrow-left" aria-label="Previous">
           &#8592;
         </button>
-        <button
-          class="slide-arrow next"
-          id="slide-next"
-          aria-label="Next slide"
-        >
+        <button class="fc-arrow fc-arrow-right" aria-label="Next">
           &#8594;
         </button>
 
         <!-- Dots -->
-        <div class="slide-dots" id="slide-dots">
-          <button
-            class="dot active"
-            data-index="0"
-            aria-label="Slide 1"
-          ></button>
-          <button class="dot" data-index="1" aria-label="Slide 2"></button>
-          <button class="dot" data-index="2" aria-label="Slide 3"></button>
-          <button class="dot" data-index="3" aria-label="Slide 4"></button>
+        <div class="fc-dots">
+          <span class="fc-dot active" data-index="0"></span>
+          <span class="fc-dot" data-index="1"></span>
+          <span class="fc-dot" data-index="2"></span>
+          <span class="fc-dot" data-index="3"></span>
+          <span class="fc-dot" data-index="4"></span>
+        </div>
+      </div>
+
+      <!-- BOTTOM: Case study panels -->
+      <div class="fc-bottom">
+        <div class="fc-panel active" data-index="0">
+          <div class="fc-panel-left">
+            <img
+              class="fc-panel-logo"
+              src="assets/ATLAS HOSPITALS.png"
+              alt="ATLAS HOSPITALS"
+            />
+            <div class="fc-panel-name">ATLAS HOSPITALS</div>
+            <div class="fc-panel-category">Healthcare</div>
+          </div>
+          <div class="fc-panel-right">
+            <div class="fc-panel-body">
+              <div class="fc-case-block">
+                <h4>Challenge</h4>
+                <p>
+                  Low patient acquisition rate and declining referral numbers
+                  across outpatient departments.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Strategy</h4>
+                <p>
+                  Deployed a targeted paid ads campaign combined with a referral
+                  incentive programme across key catchment areas.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Result</h4>
+                <p>
+                  Significant growth in new patient registrations within the
+                  first 60 days of the campaign.
+                </p>
+              </div>
+            </div>
+            <div class="fc-metrics">
+              <div class="fc-metric">
+                <span class="fc-metric-value">320%</span
+                ><span class="fc-metric-label">ROI</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">250+</span
+                ><span class="fc-metric-label">Leads Generated</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">40%</span
+                ><span class="fc-metric-label">Growth Rate</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">↓60%</span
+                ><span class="fc-metric-label">Cost Per Lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fc-panel" data-index="1">
+          <div class="fc-panel-left">
+            <img
+              class="fc-panel-logo"
+              src="assets/DR ANILKUMAR EYE HOSPITAL.jpg"
+              alt="DR ANILKUMAR EYE HOSPITAL"
+            />
+            <div class="fc-panel-name">DR ANILKUMAR EYE HOSPITAL</div>
+            <div class="fc-panel-category">Healthcare</div>
+          </div>
+          <div class="fc-panel-right">
+            <div class="fc-panel-body">
+              <div class="fc-case-block">
+                <h4>Challenge</h4>
+                <p>
+                  Struggling to convert online enquiries into booked
+                  appointments despite high website traffic.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Strategy</h4>
+                <p>
+                  Redesigned the enquiry funnel and introduced automated
+                  follow-up sequences to nurture leads effectively.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Result</h4>
+                <p>
+                  Conversion rate tripled within 45 days, with a measurable drop
+                  in enquiry response time.
+                </p>
+              </div>
+            </div>
+            <div class="fc-metrics">
+              <div class="fc-metric">
+                <span class="fc-metric-value">3×</span
+                ><span class="fc-metric-label">Conversion Rate</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">180+</span
+                ><span class="fc-metric-label">Appointments Booked</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">55%</span
+                ><span class="fc-metric-label">Faster Response</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">↑28%</span
+                ><span class="fc-metric-label">Revenue Growth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fc-panel" data-index="2">
+          <div class="fc-panel-left">
+            <img
+              class="fc-panel-logo"
+              src="assets/MUKESH ARTHRO CARE HOSPITAL.png"
+              alt="MUKESH ARTHRO CARE HOSPITAL"
+            />
+            <div class="fc-panel-name">MUKESH ARTHRO CARE HOSPITAL</div>
+            <div class="fc-panel-category">Healthcare</div>
+          </div>
+          <div class="fc-panel-right">
+            <div class="fc-panel-body">
+              <div class="fc-case-block">
+                <h4>Challenge</h4>
+                <p>
+                  Lack of brand visibility in a competitive regional market with
+                  multiple established providers.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Strategy</h4>
+                <p>
+                  Executed a multi-channel brand awareness campaign including
+                  content marketing, local SEO, and community events.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Result</h4>
+                <p>
+                  Brand recall improved substantially and organic search traffic
+                  increased month on month.
+                </p>
+              </div>
+            </div>
+            <div class="fc-metrics">
+              <div class="fc-metric">
+                <span class="fc-metric-value">5×</span
+                ><span class="fc-metric-label">Search Visibility</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">400+</span
+                ><span class="fc-metric-label">New Patients</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">70%</span
+                ><span class="fc-metric-label">Organic Traffic Up</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">↑45%</span
+                ><span class="fc-metric-label">Brand Recall</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fc-panel" data-index="3">
+          <div class="fc-panel-left">
+            <img
+              class="fc-panel-logo"
+              src="assets/SRI RAMAKRISHNA SPECIALTY HOSPITALS.jpg"
+              alt="SRI RAMAKRISHNA SPECIALTY HOSPITALS"
+            />
+            <div class="fc-panel-name">SRI RAMAKRISHNA SPECIALTY HOSPITALS</div>
+            <div class="fc-panel-category">Healthcare</div>
+          </div>
+          <div class="fc-panel-right">
+            <div class="fc-panel-body">
+              <div class="fc-case-block">
+                <h4>Challenge</h4>
+                <p>
+                  High staff turnover and inconsistent service delivery
+                  impacting patient satisfaction scores.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Strategy</h4>
+                <p>
+                  Introduced a structured training programme and internal
+                  performance framework across all departments.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Result</h4>
+                <p>
+                  Staff retention improved significantly and patient
+                  satisfaction scores reached an all-time high.
+                </p>
+              </div>
+            </div>
+            <div class="fc-metrics">
+              <div class="fc-metric">
+                <span class="fc-metric-value">↓35%</span
+                ><span class="fc-metric-label">Staff Turnover</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">92%</span
+                ><span class="fc-metric-label">Patient Satisfaction</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">60%</span
+                ><span class="fc-metric-label">Training Completion</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">↑30%</span
+                ><span class="fc-metric-label">Team Performance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fc-panel" data-index="4">
+          <div class="fc-panel-left">
+            <img
+              class="fc-panel-logo"
+              src="https://placehold.co/64x64/ffffff/1a1a2e?text=H5"
+              alt="Elmwood Healthcare Group"
+            />
+            <div class="fc-panel-name">Elmwood Healthcare Group</div>
+            <div class="fc-panel-category">Healthcare</div>
+          </div>
+          <div class="fc-panel-right">
+            <div class="fc-panel-body">
+              <div class="fc-case-block">
+                <h4>Challenge</h4>
+                <p>
+                  Entering a new geographic market with no existing brand
+                  presence or local referral network.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Strategy</h4>
+                <p>
+                  Developed a full market entry strategy including competitor
+                  analysis, partnership outreach, and a launch campaign.
+                </p>
+              </div>
+              <div class="fc-case-block">
+                <h4>Result</h4>
+                <p>
+                  Established a foothold in the new market within 90 days with a
+                  growing pipeline of referral partners.
+                </p>
+              </div>
+            </div>
+            <div class="fc-metrics">
+              <div class="fc-metric">
+                <span class="fc-metric-value">90</span
+                ><span class="fc-metric-label">Days to Launch</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">15+</span
+                ><span class="fc-metric-label">Referral Partners</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">280%</span
+                ><span class="fc-metric-label">Pipeline Growth</span>
+              </div>
+              <div class="fc-metric">
+                <span class="fc-metric-value">↑50%</span
+                ><span class="fc-metric-label">Market Penetration</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
