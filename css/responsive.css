@@ -349,3 +349,36 @@
     grid-template-columns: 1fr;
   }
 }
+/* --- What We Do --- */
+@media (max-width: 768px) {
+  .wwd-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* --- Social Proof --- */
+@media (max-width: 900px) {
+  .sp-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sp-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sp-video-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sp-video-large {
+    grid-row: span 1;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .sp-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
