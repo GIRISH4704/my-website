@@ -101,165 +101,6 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ===== HERO SLIDESHOW ===== */
-
-#hero {
-  width: 100%;
-  height: calc(100vh - var(--nav-height));
-  position: relative;
-  overflow: hidden;
-}
-
-.slideshow {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-/* Each slide */
-.slide {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0;
-  transition: opacity 0.9s ease;
-  display: flex;
-  align-items: center;
-}
-
-.slide.active {
-  opacity: 1;
-  z-index: 1;
-}
-
-/* Dark overlay so text is always readable over any image */
-.slide-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.65) 0%,
-    rgba(0, 0, 0, 0.3) 60%,
-    rgba(0, 0, 0, 0.1) 100%
-  );
-}
-
-/* Text content */
-.slide-content {
-  position: relative;
-  z-index: 2;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 2rem;
-  width: 100%;
-  color: #ffffff;
-}
-
-.slide-tag {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-accent);
-  margin-bottom: 1rem;
-}
-
-.slide-content h1 {
-  font-size: clamp(2.2rem, 5vw, 3.8rem);
-  font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 1.25rem;
-  max-width: 580px;
-}
-
-.slide-desc {
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.82);
-  max-width: 440px;
-  margin-bottom: 2rem;
-  line-height: 1.65;
-}
-
-.slide-btn {
-  display: inline-block;
-  background: var(--color-accent);
-  color: #ffffff;
-  padding: 0.85rem 2rem;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition:
-    transform var(--transition),
-    opacity var(--transition);
-}
-
-.slide-btn:hover {
-  opacity: 0.88;
-  transform: translateY(-2px);
-}
-
-/* Arrow buttons */
-.slide-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  color: #ffffff;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background var(--transition);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.slide-arrow:hover {
-  background: rgba(255, 255, 255, 0.28);
-}
-
-.slide-arrow.prev {
-  left: 1.5rem;
-}
-.slide-arrow.next {
-  right: 1.5rem;
-}
-
-/* Dot indicators */
-.slide-dots {
-  position: absolute;
-  bottom: 1.75rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  display: flex;
-  gap: 10px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  background: transparent;
-  cursor: pointer;
-  transition:
-    background var(--transition),
-    border-color var(--transition);
-  padding: 0;
-}
-
-.dot.active {
-  background: #ffffff;
-  border-color: #ffffff;
-}
-
 /* ===== SHARED SECTION UTILITIES ===== */
 
 .section-container {
@@ -281,7 +122,7 @@ section h2 {
   font-size: clamp(1.8rem, 3.5vw, 2.8rem);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--color-primary);
+  color: #ffffff;
   margin-bottom: 1.25rem;
 }
 
@@ -301,7 +142,7 @@ section p {
 
 #problems {
   background-color: #1a1a2e;
-  padding: 7rem 0 10rem;
+  padding: 4rem 0 5rem;
 }
 
 .problems-container {
@@ -319,7 +160,7 @@ section p {
 }
 
 .problems-sticky-head {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .problems-sticky-head .section-tag {
@@ -347,7 +188,7 @@ section p {
 .problems-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.2rem;
 }
 
 .problem-item {
@@ -455,7 +296,8 @@ section p {
 .section-header {
   text-align: center;
   max-width: 620px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2rem;
+  color: #ffffff;
 }
 
 .section-intro {
@@ -468,7 +310,7 @@ section p {
 /* ===== SERVICES GRID ===== */
 
 #services {
-  padding: 7rem 0;
+  padding: 3rem 0;
   background: #1a1a2e;
 }
 
@@ -479,8 +321,8 @@ section p {
 }
 
 .service-card {
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
+  background: #16213e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: calc(var(--radius) * 1.5);
   padding: 2rem 1.75rem;
   display: flex;
@@ -496,7 +338,7 @@ section p {
 
 .service-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
   border-color: var(--color-accent);
 }
 
@@ -515,13 +357,13 @@ section p {
 .service-card h3 {
   font-size: 1.1rem;
   font-weight: 650;
-  color: var(--color-primary);
+  color: #ffffff;
   margin: 0;
 }
 
 .service-card p {
   font-size: 0.93rem;
-  color: var(--color-text-muted);
+  color: #a0aec0;
   line-height: 1.7;
   flex: 1;
   margin: 0;
@@ -2362,12 +2204,23 @@ section p {
    FLASHCARD CAROUSEL SECTION
    ============================================ */
 
+.hero-heading {
+  text-align: center;
+  padding: 0 0 0;
+}
+
+.hero-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
 #hero {
   background-color: #1a1a2e;
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   overflow: hidden;
 }
 
@@ -2523,7 +2376,7 @@ section p {
 .fc-bottom {
   position: relative;
   margin: 0 40px;
-  min-height: 320px;
+  min-height: 220px;
 }
 
 .fc-panel {
@@ -2535,13 +2388,13 @@ section p {
   background: #16213e;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
-  padding: 36px 40px;
+  padding: 28px 40px;
   display: flex;
   gap: 36px;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.4s ease;
-  min-height: 320px;
+  min-height: 200px;
 }
 
 .fc-panel.active {
