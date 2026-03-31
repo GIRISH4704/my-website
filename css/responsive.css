@@ -382,3 +382,17 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+/* --- Intro video section --- */
+@media (max-width: 768px) {
+  .intro-overlay {
+    background: rgba(26, 26, 46, 0.82);
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+}

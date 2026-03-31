@@ -36,7 +36,7 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 });
 // ===== SCROLL REVEAL =====
 const revealEls = document.querySelectorAll(
-  ".why-point, .stat-card, .service-card, .char-item, .testimonial-card",
+  ".why-point, .stat-card, .service-card",
 );
 
 const revealObserver = new IntersectionObserver(
@@ -123,49 +123,3 @@ if (contactForm) {
     // ── End placeholder block ──────────────────────────────────
   });
 }
-// ===== PROBLEMS SECTION SCROLL ANIMATIONS =====
-(function () {
-  const problemItems = document.querySelectorAll(".problem-item");
-  const solutionBlock = document.querySelector(".solution-block");
-
-  if (!problemItems.length) return;
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    },
-    {
-      threshold: 0.2,
-      rootMargin: "0px 0px -60px 0px",
-    },
-  );
-
-  // Observe each problem item with a staggered delay
-  problemItems.forEach((item, i) => {
-    item.style.transitionDelay = `${i * 0.15}s`;
-    observer.observe(item);
-  });
-
-  // Solution block appears after all problems are visible
-  if (solutionBlock) {
-    const solutionObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            solutionBlock.classList.add("visible");
-          }
-        });
-      },
-      {
-        threshold: 0.3,
-        rootMargin: "0px 0px -80px 0px",
-      },
-    );
-
-    solutionObserver.observe(solutionBlock);
-  }
-})();

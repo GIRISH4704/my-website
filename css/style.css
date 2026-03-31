@@ -52,9 +52,7 @@ img {
 
 .why-point,
 .stat-card,
-.service-card,
-.char-item,
-.testimonial-card {
+.service-card {
   opacity: 0;
   transform: translateY(24px);
   transition:
@@ -64,9 +62,7 @@ img {
 
 .why-point.revealed,
 .stat-card.revealed,
-.service-card.revealed,
-.char-item.revealed,
-.testimonial-card.revealed {
+.service-card.revealed {
   opacity: 1;
   transform: translateY(0);
 }
