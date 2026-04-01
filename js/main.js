@@ -123,3 +123,7 @@ if (contactForm) {
     // ── End placeholder block ──────────────────────────────────
   });
 }
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  document.body.style.setProperty("--scroll", scrollY + "px");
+});

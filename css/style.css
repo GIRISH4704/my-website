@@ -15,12 +15,25 @@
   --color-bg-soft: #f9fafb;
   --color-border: #e5e7eb;
 
-  --font-main: "Inter", sans-serif;
+  --dark-base: #080810;
+  --dark-surface: #0f0f1e;
+  --dark-card: #13132a;
+  --dark-card-deep: #0a0a18;
+  --dark-border: rgba(255, 255, 255, 0.07);
+
+  --gold: #c9a84c;
+  --gold-bright: #e8c86e;
+  --gold-glow: rgba(201, 168, 76, 0.25);
+
+  --font-main: "DM Sans", sans-serif;
+  --font-display: "Syne", sans-serif;
 
   --nav-height: 70px;
   --max-width: 1200px;
   --radius: 8px;
+  --radius-lg: 14px;
   --transition: 0.25s ease;
+  --transition-md: 0.35s ease;
 }
 
 html {
@@ -29,8 +42,8 @@ html {
 
 body {
   font-family: var(--font-main);
-  color: var(--color-text);
-  background: var(--color-bg);
+  color: #e8e8f0;
+  background: var(--dark-base);
   line-height: 1.7;
   overflow-x: hidden;
 }
@@ -65,4 +78,24 @@ img {
 .service-card.revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.08;
+
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'>\
+<path d='M0 100 Q50 80 100 100 T200 100' stroke='white' fill='none' stroke-width='0.6'/>\
+<path d='M0 120 Q50 100 100 120 T200 120' stroke='white' fill='none' stroke-width='0.6'/>\
+<path d='M0 140 Q50 120 100 140 T200 140' stroke='white' fill='none' stroke-width='0.6'/>\
+</svg>");
+
+  background-size: 200px 200px;
+
+  background-position: 0 calc(var(--scroll, 0px) * 0.3);
 }
