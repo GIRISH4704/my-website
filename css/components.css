@@ -151,16 +151,19 @@ section p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: start;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 /* ── LEFT SIDE ── */
 .problems-left {
-  padding: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .problems-sticky-head {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .problems-sticky-head .section-tag {
@@ -177,7 +180,7 @@ section p {
 }
 
 .problems-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.25;
@@ -188,23 +191,34 @@ section p {
 .problems-list {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .problem-item {
   display: flex;
-  gap: 1.25rem;
+  gap: 1rem;
   align-items: flex-start;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  transition: border-color 0.25s ease;
+}
+
+.problem-item:hover {
+  border-color: rgba(233, 69, 96, 0.4);
 }
 
 .problem-number {
   flex-shrink: 0;
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: var(--color-accent);
   color: #ffffff;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -213,17 +227,17 @@ section p {
   margin-top: 2px;
 }
 
-.problem-item h3 {
-  font-size: 1.1rem;
+.problem-text h3 {
+  font-size: 1rem;
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 6px;
+  margin: 0 0 4px;
 }
 
-.problem-item p {
-  font-size: 0.92rem;
+.problem-text p {
+  font-size: 0.88rem;
   color: #a0aec0;
-  line-height: 1.7;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -232,7 +246,6 @@ section p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem 0 4rem;
 }
 
 .solution-block {
@@ -272,13 +285,6 @@ section p {
   .problems-container {
     grid-template-columns: 1fr;
     gap: 3rem;
-  }
-
-  .problems-left {
-    padding: 0 1.5rem;
-  }
-
-  .problems-right {
     padding: 0 1.5rem;
   }
 
