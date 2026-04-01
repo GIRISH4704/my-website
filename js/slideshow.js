@@ -14,7 +14,7 @@
 
   const origCards = Array.from(track.querySelectorAll(".fc-card"));
   const total = origCards.length;
-  const CARD_W = 380; // must match CSS flex-basis
+  const CARD_W = window.innerWidth <= 768 ? 260 : 380; // must match CSS flex-basis
   const GAP = 24;
   const STEP = CARD_W + GAP;
 
